@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>racing game</h1>
+	<section class="sec1">
+		<div>
+			<h2>Choose a car</h2>
+			<div class="chooseCar">
+				<div class="car" id='mersedes' data="green" role='48' onclick="selectedCar(this)">
+					<p class="carImg">
+						<i class="fas fa-car"></i>
+					</p>
+					<p class="carModel">mersedes</p>
+					<p class="carSpeed">48px/s</p>
+				</div>
+				<div class="car" id='bmw' data="blue" role='50' onclick="selectedCar(this)">
+					<p class="carImg">
+						<i class="fas fa-car"></i>
+					</p>
+					<p class="carModel">BMW</p>
+					<p class="carSpeed">50px/s</p>
+				</div>
+				<div class="car"  id='toyota' data="#6899a9" role='47' onclick="selectedCar(this)">
+					<p class="carImg">
+						<i class="fas fa-car"></i>
+					</p>
+					<p class="carModel">Toyota</p>
+					<p class="carSpeed">47px/s</p>
+				</div>
+				<div class="car" id='lexus' data="orange" role='51' onclick="selectedCar(this)">
+					<p class="carImg">
+						<i class="fas fa-car"></i>
+					</p>
+					<p class="carModel">Lexus</p>
+					<p class="carSpeed">51px/s</p>
+				</div>
+				<div class="car"  id='audi' data="black" role='49'  onclick="selectedCar(this)">
+					<p class="carImg">
+						<i class="fas fa-car"></i>
+					</p>
+					<p class="carModel">Audi</p>
+					<p class="carSpeed">49px/s</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h2>Choose a track</h2>
+			<div class="chooseTrack">
+				<div class="track" id="asphalt" role="1.2" data="d3c7e8"  onclick="selectedTrack(this)">
+					<p class="trackImg">---------</p>
+					<p class="trackType">Asphalt</p>
+					<p class="trackFactor">factor 1.2</p>
+				</div>
+				<div class="track"  id="ice" role="0.7" data="e8e8e8"  onclick="selectedTrack(this)">
+					<p class="trackImg">---------</p>
+					<p class="trackType">Ice</p>
+					<p class="trackFactor">factor 0.7</p>
+				</div>
+				<div class="track" id="ground" role="1"  data="e2bf6e" onclick="selectedTrack(this)" >
+					<p class="trackImg" >---------</p>
+					<p class="trackType" >Ground</p>
+					<p class="trackFactor" >factor 1</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<button class="start" type ="button">start</button> 
+	<section class="trackLine">
+		<div class="startLine"></div>
+		<div class="finishLine"></div>
+
+	</section>
+
+	<script type="text/javascript" src="js/class.js"></script>
+	<script type="text/javascript" src="js/helper.js"></script> 
+	
+</body>
+</html>
